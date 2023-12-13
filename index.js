@@ -37,7 +37,7 @@ const verifyJWT = (req, res, next) => {
   })
 }
 
-// Send Email
+// Send Email with nodemailer
 const sendMail = (emailData, emailAddress) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
